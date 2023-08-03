@@ -1,0 +1,46 @@
+/*
+Theme Name: Photographe event
+text Domain : Photographeevent
+Theme URI: https://photographe-event.io
+Author: Ismail	Jelassi
+Author URI: 
+Description: Site complexe pour une photographe freelance
+Requires at least: WordPress 6.2
+Version: 1.0
+Requires PHP: 7.4 
+*/
+
+@import "assets/css/typography.css";
+
+@import "assets/css/header.css";
+@import "assets/css/footer.css";
+@import "assets/css/contact.css";
+@import "assets/css/single-photo.css";
+@import "assets/css/template-home.css";
+@import "assets/css/lightbox.css";
+
+
+html{
+    max-width: 1440px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+

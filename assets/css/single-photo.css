@@ -1,0 +1,288 @@
+.photo-info {
+  font-family: 'space-mono';
+  font-size: 0.87em;
+  letter-spacing: 0.1em;
+  line-height: 21px;
+  margin: 0 10%;
+  height: 52.8em;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.info {
+  min-width: 50%;
+  margin-right: 3%;
+  padding-bottom: 43px;
+  border-bottom: 1px solid;
+}
+
+.part {
+  flex: 1;
+}
+
+.photo-titre {
+  font-family: 'space-mono-italic';
+  font-size: 4.1em;
+  font-weight: 400;
+  line-height: 58px;
+  padding-bottom: 20px;
+}
+
+.info-tx {
+  margin: 4px 0px;
+}
+
+.galerie-img, .galerie-photo,.galerie-img, .img-fullscreen {
+  height: 100%; 
+  width: 100%;
+}
+
+.photo-info.galerie-img {
+  min-height: 397px;
+}
+
+
+    /* section "cette photo vous interesse?" */
+
+.more {
+  height: 118px;
+  margin: 0 10%;
+  border-bottom: 1px solid black;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.more-tx-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.more-tx {
+  font-family: 'poppins';
+  font-weight: 300;
+  font-size: 14px;
+  padding-right: 1.75em;
+}
+
+.btn-CTA {
+  background-color: transparent;
+  border: transparent;
+  font-family: 'space-mono';
+  font-size: 14px;
+  box-shadow: none;
+  padding: 0 15px;
+  cursor: pointer;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: .5s all ease-in-out;
+}
+
+.btn-CTA::before {
+  content: '';
+  position: absolute;
+  background: black;
+  width: 3px;
+  height: 38px;
+  left: 0;
+  transition: .2s all;
+  z-index: -1;
+}
+
+.btn-CTA:hover::before {
+  width: 100%;
+}
+.btn-CTA:hover {
+  color: #ffffff;
+}
+
+.moreBtn {
+  width: 142px;
+}
+
+  /* afffichage des photos au hover des flèches */
+
+.more-slider {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.photo-hover-container {
+  display: flex;
+}
+
+.prev-photo, .next-photo {
+  width: 108px;
+  height: 80px;
+}
+
+  /* flèches */
+
+.more-fleches {
+  width: 135px;
+  margin-left: 38%;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+   /* section "vous aimerez aussi */
+
+.aimez-aussi-titre {
+  font-family: 'space-mono';
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  padding-top: 77px;
+  padding-bottom: 35px;
+}
+
+.aimez-aussi-flex {
+  display: flex;
+}
+
+.aimez-aussi-btn-conatainer{
+  margin: 0 10%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.aimez-aussi-btn {
+  margin-top: 5em;
+  margin-bottom: 5.6em;
+}
+
+
+@media all and (max-width: 680px){
+ 
+  .photo-info {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-top: 30px;
+  }
+
+  .info {
+    margin-left: 3%;
+    border: none;
+  }
+
+  .photo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .photo-info .photo-single {
+    height: 28.5em;
+    width: 100%;
+  }
+
+  .photo-info .photo-single img {
+    width: 100%;
+  }
+
+  .photo-info .photo-single .icon-fullscreen, .photo-info .photo-single .icon-oeil {
+    width:35px;
+    height: 35px;
+  }
+.more {
+  border-top: 1px solid;
+}
+
+}
+ 
+@media all and (max-width: 580px){
+  
+  .info {
+    margin-right: 0;
+  }
+
+  .galerie-container {
+    padding: 0;
+  }
+
+  .more, .aimez-aussi-titre, .galerie.background, .aimez-aussi-btn-conatainer {
+    background-color: #E5E5E5;
+    margin: 0 5%;
+  }
+
+  .more {
+    border-top: 1px solid black;
+    padding-left: 3%;
+  }
+
+  .more-tx-btn {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .more-slider {
+    display: none;
+  }
+
+  .galerie.background.galerie-container {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .aimez-aussi-titre {
+    font-size: 0.9em;
+    padding: 30px 0;
+  }    
+
+  .aimez-aussi {
+    align-items: center;
+  }
+
+  .aimez-aussi-btn {
+    margin: 30px 0;
+  }
+
+  .btn-CTA {
+    height: 38px;
+    background-color: white;
+    border: transparent;
+    font-family: 'space-mono';
+    font-size: 14px;
+    box-shadow: none;
+    padding: 0 15px;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    transition: .5s all ease-in-out;
+  }
+  
+  .btn-CTA::before {
+    content: '';
+    position: absolute;
+    background: black;
+    width: 3px;
+    height: 38px;
+    left: 0;
+    transition: .2s all;
+    z-index: -1;
+  }
+
+  .btn-CTA:hover {
+    color: #ffffff;
+  }
+  
+  .btn-CTA:hover::before {
+    width: 100%;
+  }
+}
