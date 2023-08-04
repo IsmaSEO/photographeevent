@@ -81,7 +81,7 @@ function navigationPhotos(fleche, image) {
   
     $.ajax({
       type: 'POST',
-      url: '/wp-admin/admin-ajax.php',
+      url: '/local/wp-admin/admin-ajax.php',
       dataType: 'html',
       data: {
         action: 'weichie_load_more',

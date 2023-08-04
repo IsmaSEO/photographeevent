@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
         currentPage++;
         // Send an AJAX request to the server
         $.ajax({
-            url: 'wp-admin/admin-ajax.php', // Use the global ajaxurl variable provided by WordPress
+            url: '/local/wp-admin/admin-ajax.php', // Use the global ajaxurl variable provided by WordPress
             method: 'POST', // HTTP method to use
             data: {
                 action: 'weichie_load_more',
@@ -43,7 +43,7 @@ jQuery(document).ready(function($) {
   
           // Faites la requête Ajax
           $.ajax({
-              url: '/wp-admin/admin-ajax.php', // L'URL de l'action Ajax
+              url: '/local/wp-admin/admin-ajax.php', // L'URL de l'action Ajax
               method: 'POST',
               data: {
                   action: 'galerie_filtres', // L'action à appeler dans functions.php
