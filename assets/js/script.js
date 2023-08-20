@@ -77,7 +77,7 @@ function navigationPhotos(fleche, image) {
 
   let currentPage = 1;
   $('#charger-plus').on('click', function() {
-    currentPage++; // Do currentPage + 1, because we want to load the next page
+    currentPage++; // Do currentPage + 1, pour charger la page suivante
   
     $.ajax({
       type: 'POST',

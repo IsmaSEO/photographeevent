@@ -8,11 +8,11 @@ let listOfInfo = [];
 
 onDocumentLoad();
 
-//appelé quand la requete ajax termne 
+//appelé quand la requete ajax termine 
 jQuery(document).ajaxComplete(function() {
   listOfInfo = []; //vide les tableaux pour recommencer
   listOfIconFullScreen = [];
-  onDocumentLoad();  //reload evenement document ready pour rebrancher les évenemtns de click
+  onDocumentLoad();  //reload evenement document ready pour rebrancher les évenements de click
 })
 
 //les fonctions avec les fonctions

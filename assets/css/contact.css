@@ -1,4 +1,4 @@
-     /*  Modal (background) */
+/*  Modal (background) */
 .modal {
   display: none; 
   position: fixed; 
@@ -26,7 +26,7 @@
 }
 
 
-      /* formulaire de contact */
+/* formulaire de contact */
 
 .wpforms-field-container {
     margin-top: 2.8em !important;

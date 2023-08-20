@@ -1,4 +1,4 @@
-// pagination
+// Pagination
 
 (function($) {
 jQuery(document).ready(function($) {

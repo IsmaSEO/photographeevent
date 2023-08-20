@@ -15,7 +15,8 @@
           })
         })
       }
-// When the user clicks anywhere outside of the modal, close it
+      
+// Fermeture de la modal Lorsque l'utilisateur clique n'importe où en dehors
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = 'none'

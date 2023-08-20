@@ -50,7 +50,7 @@
 }
 
 
-/* intégration du menu burger pr mobile */
+/* intégration du menu burger pour mobile */
 
 .open_nav {
   display: none;
@@ -127,7 +127,7 @@
 }  
 
 
-  /* animation à l'ouverture du menu burger */
+/* Animation à l'ouverture du menu burger */
 .open_nav.open {
   animation: slide-down 1s ease;
 }
